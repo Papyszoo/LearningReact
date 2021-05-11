@@ -28,8 +28,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <input onChange={this.filterUsers.bind(this)}></input>
-        <UsersList users={this.state.filteredUsers}></UsersList>
+        <input onChange={this.filterUsers.bind(this)}/>
+        <UsersList users={this.state.filteredUsers}/>
       </div>
     );
   }
