@@ -6,7 +6,9 @@ function FilteredUsersListPage() {
     return(
         <div>
             <Navbar></Navbar>
-            <FilteredUsersList></FilteredUsersList>
+            <main className="ui main text container">
+                <FilteredUsersList></FilteredUsersList>
+            </main>
         </div>
     )
 }

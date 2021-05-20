@@ -1,19 +1,28 @@
+import { Menu, Container, Button, Header } from "semantic-ui-react";
+
 function ContactsListHeader() {
     return (
-      <header className="ui fixed menu">
-        <nav className="ui container">
-          <a href="#" className="header item">
-            <img
-              className="logo"
-              src="https://typeofweb.com/wp-content/uploads/2017/08/cropped-typeofweb_logo-04-white-smaller-1-e1504359870362.png"
-            />
-            Lista kontaktów
-          </a>
-          <div className="header item">
-            <button className="ui button">Dodaj</button>
-          </div>
-        </nav>
-      </header>
+      <div>
+        <Menu>
+          <Container>
+            <Menu.Item>
+              <Header as="a" href="#">
+                <img
+                  className="logo"
+                  src="https://typeofweb.com/wp-content/uploads/2017/08/cropped-typeofweb_logo-04-white-smaller-1-e1504359870362.png"
+                />
+                Lista kontaktów
+              </Header>
+            </Menu.Item>
+            <Menu.Item>
+              <Button>Dodaj</Button>
+            </Menu.Item>
+          </Container>
+        </Menu>
+      </div>
+
+
+
     );
   }
   export default ContactsListHeader;

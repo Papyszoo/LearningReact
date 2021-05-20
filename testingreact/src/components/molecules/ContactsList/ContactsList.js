@@ -1,25 +1,23 @@
-import ContactItem from '../../atoms/ContactItem/ContactItem'
+import * as React from "react";
+import {ContactItem} from '../../atoms/ContactItem/ContactItem'
 
-function ContactsList() {
+export class ContactsList extends React.Component {
+  contactToContactItem = contact => {
+    const avatarUrl = contact.picture.thumbnail;
+    const { title, first, last } = contact.name;
+    const name = `${title} ${first} ${last}`.trim();
+    const phone = contact.phone;
+    const key = contact.login.username;
+    return <ContactItem key={key} avatarUrl={avatarUrl} name={name} phone={phone} />;
+  };
+
+  render() {
     return (
       <ul className="ui relaxed divided list selection">
-        <ContactItem
-          login="typeofweb1"
-          name="Lena"
-          department="JavaScript Developer"
-        />
-        <ContactItem
-          login="typeofweb2"
-          name="Brian"
-          department="Human Resources"
-        />
-        <ContactItem
-          login="typeofweb3"
-          name="Rick"
-          department="QA"
-        />
+        {this.props.contacts.map(this.contactToContactItem)}
       </ul>
     );
   }
+}
 
 export default ContactsList;
