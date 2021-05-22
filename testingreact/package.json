@@ -4,11 +4,7 @@
   "private": true,
   "homepage": "https://papyszoo.github.io/TestingReact/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
-    "enzyme": "^3.11.0",
+    "axios": "^0.21.1",
     "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -47,6 +43,12 @@
   "devDependencies": {
     "@craco/craco": "^5.9.0",
     "@semantic-ui-react/craco-less": "^1.2.1",
-    "semantic-ui-less": "^2.4.1"
+    "axios-mock-adapter": "^1.19.0",
+    "semantic-ui-less": "^2.4.1",
+    "enzyme": "^3.11.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1"
   }
 }

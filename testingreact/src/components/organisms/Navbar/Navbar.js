@@ -25,6 +25,12 @@ function Navbar() {
               <Menu.Item as="a">
                 <Link to="/ContactsList">Contacts List</Link>
               </Menu.Item>
+              <Menu.Item as="a">
+                <Link to="/JokeGenerator">Joke Generator</Link>
+              </Menu.Item>
+              <Menu.Item as="a">
+                <Link to="/CaptureValuesForm">Capture Values from Form</Link>
+              </Menu.Item>
             </Menu.Menu>
           </Menu.Item>
         </Menu>
