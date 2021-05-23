@@ -2,6 +2,8 @@ import ContactsListHeader from '../../components/molecules/ContactsListHeader/Co
 import ContactsList from '../../components/molecules/ContactsList/ContactsList'
 import Navbar from '../../components/organisms/Navbar/Navbar'
 import * as React from "react";
+import { connect } from "react-redux";
+import { contactsFetched } from "./actions";
 export class ContactsListPage extends React.Component {
   state = {
     contacts: []
@@ -25,4 +27,10 @@ export class ContactsListPage extends React.Component {
     );
   }
 }
-  export default ContactsListPage;
+const mapStateToProps = (state) => {
+  return {
+    contacts: state.contacts // (1)
+  }
+};
+const mapDispatchToProps = { contactsFetched };
+export const AppContainer = connect(mapStateToProps, mapDispatchToProps)(ContactsListPage);
