@@ -31,6 +31,9 @@ function Navbar() {
               <Menu.Item as="a">
                 <Link to="/CaptureValuesForm">Capture Values from Form</Link>
               </Menu.Item>
+              <Menu.Item as="a">
+                <Link to="/DynamicComponents">Dynamic Components</Link>
+              </Menu.Item>
             </Menu.Menu>
           </Menu.Item>
         </Menu>

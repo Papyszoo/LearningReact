@@ -6,6 +6,7 @@ import { HashRouter as Router , Route, Switch } from 'react-router-dom';
 import ContactsListPage from './pages/ContactsListPage/ContactsListPage';
 import JokeGeneratorPage from './pages/JokeGeneratorPage/JokeGeneratorPage';
 import CaptureValuesFormPage from './pages/CaptureValuesFormPage/CaptureValuesFormPage';
+import DynamicComponentsPage from './pages/DynamicComponentsPage/DynamicComponentsPage';
 
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
             <Route path="/ContactsList" component={ContactsListPage} />
             <Route path="/JokeGenerator" component={JokeGeneratorPage} />
             <Route path="/CaptureValuesForm" component={CaptureValuesFormPage} />
+            <Route path="/DynamicComponents" component={DynamicComponentsPage} />
           </Switch>
         </Router>
       </main>
