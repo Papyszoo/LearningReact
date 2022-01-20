@@ -1,4 +1,4 @@
-TestingReact - More like learning react.
+# LearningReact
 Trying to save some ideas here, mini apps organized and deployed in one repo.
 I'll try to use only one css framework that I want to learn - tailwind css.
 
