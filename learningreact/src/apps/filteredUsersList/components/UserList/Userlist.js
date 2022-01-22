@@ -1,14 +1,14 @@
 const UsersList = ({ users }) => {
     if (users.length > 0) {
       return (
-        <ul>
-          {users.map(user => <li key={user}>{user}</li>)}
+        <ul className="">
+          {users.map(user => <li className="border-b border-stone-500 border-opacity-50 last:border-b-0 p-4 text-white" key={user}>{user}</li>)}
         </ul>
       );
     }
   
     return (
-      <p>No results!</p>
+      <p className="p-4">No results!</p>
     );
   };
 

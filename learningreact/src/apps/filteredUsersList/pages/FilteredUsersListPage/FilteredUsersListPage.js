@@ -3,10 +3,10 @@ import FilteredUsersList from '../../components/FilteredUsersList/FilteredUsersL
 
 function FilteredUsersListPage() {
     return(
-        <div>
-            <main className="ui main text container">
+        <div className="mx-auto my-80">
+            <div className="bg-blue-900 border border-stone-500 border-opacity-50 rounded-xl bg-opacity-70 backdrop-blur-lg backdrop-saturate-150">
                 <FilteredUsersList></FilteredUsersList>
-            </main>
+            </div>
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import React from 'react';
+import SearchInput from '../SearchInput';
 import UsersList from '../UserList/Userlist'
 
-const allUsers = ['Michal', 'Kasia', 'Jacek', 'Marta', 'Tomek', 'Ania'];
+const allUsers = ['Michał', 'Kasia', 'Jacek', 'Marta', 'Tomek', 'Ania'];
 
 class FilteredUsersList extends React.Component {
     constructor() {
-        super();    
-        
+        super();
         this.state = {
           filteredUsers: allUsers
         };
@@ -26,8 +26,10 @@ class FilteredUsersList extends React.Component {
     
       render() {
         return (
-          <div>
-            <input onChange={this.filterUsers}/>
+          <div className="">
+            <div className="p-4 border-b border-stone-500 border-opacity-50">
+              <SearchInput onChange={this.filterUsers}/>
+            </div>
             <UsersList users={this.state.filteredUsers}/>
           </div>
         );
