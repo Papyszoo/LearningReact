@@ -16,17 +16,15 @@ class App extends React.Component {
       <main className="bg-gradient-to-b from-cyan-800 to-blue-600 h-screen">
         <div className="flex flex-row">
           <Navbar />
-          <Router basename={process.env.PUBLIC_URL}>
-            <Provider store={store}>
-              <Switch>
-                <Route path="/" component={HomePage} exact />
-                <Route path="/FilteredUsersList" component={FilteredUsersListPage} />
-                <Route path="/ContactsList" component={ContactsListPage} />
-                <Route path="/JokeGenerator" component={JokeGeneratorPage} />
-                <Route path="/CaptureValuesForm" component={CaptureValuesFormPage} />
-              </Switch>
-            </Provider>
-          </Router>
+          <Provider store={store}>
+            <Switch>
+              <Route path="/" component={HomePage} exact />
+              <Route path="/FilteredUsersList" component={FilteredUsersListPage} />
+              <Route path="/ContactsList" component={ContactsListPage} />
+              <Route path="/JokeGenerator" component={JokeGeneratorPage} />
+              <Route path="/CaptureValuesForm" component={CaptureValuesFormPage} />
+            </Switch>
+          </Provider>
         </div>
       </main>
     );
