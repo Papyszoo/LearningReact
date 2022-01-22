@@ -6,3 +6,5 @@ Full project is deployed on github pages: https://papyszoo.github.io/LearningRea
 Using HashRouter instead of BrowserRouter because it is not supported by github pages.
 
 ContactsList and FilteredUsersList code is from https://typeofweb.com/wprowadzenie-kurs-react-js/ react course.
+
+Using boxicons: https://boxicons.com/
