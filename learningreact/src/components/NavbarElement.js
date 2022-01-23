@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function NavbarElement(props) {
   return (
-      <li className="my-2 hover:">
+      <li className="my-2">
         <Link to={props.url} className="">
-          <div className="w-10/12 p-2 text-lg">
+          <div className="w-10/12 p-2 text-lg flex flex-nowrap overflow-hidden">
             <i className={`bx ${props.icon} p-2 mr-8`} ></i>
             <span className="link">{props.text}</span>
           </div>

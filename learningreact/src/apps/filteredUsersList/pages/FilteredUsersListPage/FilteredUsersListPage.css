@@ -1,0 +1,12 @@
+.app-center {
+    margin: 20rem auto auto auto;
+}
+
+.glass-box {
+    background: rgba(79, 76, 75, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(79, 76, 75, 0.1);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    border: 1px solid rgba(79, 76, 75, 0.25);
+}

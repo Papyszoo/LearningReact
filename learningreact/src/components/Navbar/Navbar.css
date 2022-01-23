@@ -1,0 +1,17 @@
+.side-navbar {
+    background: rgba(79, 76, 75, 0.25);
+    box-shadow: 0 4px 30px rgba(79, 76, 75, 0.1);
+    height: 100vh;
+    width: 5rem;
+    color: white;
+    padding: 0.75rem;
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+
+.navbar-expanded {
+    width: 18rem;
+    transition: all 0.5s;
+}

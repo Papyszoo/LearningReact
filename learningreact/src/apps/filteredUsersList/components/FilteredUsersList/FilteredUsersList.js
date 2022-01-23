@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchInput from '../SearchInput';
+import SearchInput from '../SearchInput/SearchInput';
 import UsersList from '../UserList/Userlist'
 
 const allUsers = ['Michał', 'Kasia', 'Jacek', 'Marta', 'Tomek', 'Ania'];
@@ -26,8 +26,8 @@ class FilteredUsersList extends React.Component {
     
       render() {
         return (
-          <div className="">
-            <div className="p-4 border-b border-stone-500 border-opacity-50">
+          <div>
+            <div className="p-4 border-b border-stone-500 border-opacity-50 z-10">
               <SearchInput onChange={this.filterUsers}/>
             </div>
             <UsersList users={this.state.filteredUsers}/>
